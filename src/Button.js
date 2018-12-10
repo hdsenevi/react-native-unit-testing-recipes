@@ -1,27 +1,57 @@
-import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import React, { Component } from 'react';
+import { Text, TouchableOpacity, Platform, Linking } from 'react-native';
 
-const Button = (props) => {
-    const { buttonStyle, textStyle } = styles;
-    const { onPress, label } = props
-    return (
-        <TouchableOpacity onPress={onPress} style={buttonStyle}>
-            <Text style={textStyle}>
-                {label}
-            </Text>
-        </TouchableOpacity>
-    );
+// 1. Changed to a class based component
+class Button extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    // 2. Custom function called onPress TouchableOpacity
+    onPressHandler = () => {
+        const { onPress, url } = this.props
+        if (url) {
+            Linking.openURL(url)
+        }
+        onPress()
+    }
+
+    render(){
+        const { buttonStyle, textStyle } = styles;
+        const { label, primary } = this.props;
+        
+        // 3. Custom platform specific rendering
+        const height = Platform.OS === 'ios' ? 45 : 65;
+
+        // 4. Change color of button depending on 'primary' prop
+        const newButtonStyle = primary ? 
+            [buttonStyle, { height }] : 
+            [buttonStyle, {height, backgroundColor: '#f34541', borderBottomColor: '#a43532'}];
+
+        // 5. Platform specific font styling
+        const fontSize = Platform.OS === 'ios' ? 16 : 20;
+
+        return (
+            <TouchableOpacity onPress={this.onPressHandler} style={newButtonStyle}>
+                <Text style={[textStyle, { fontSize }]}>
+                    {label}
+                </Text>
+            </TouchableOpacity>
+        );
+    }
 };
+
+Button.defaultProps = {
+    primary: true,
+}
 
 const styles = {
     textStyle: {
         alignSelf: 'center',
         color: '#fff',
-        fontSize: 16,
         fontWeight: '600',
     },
     buttonStyle: {
-        height: 45,
         alignSelf: 'stretch',
         justifyContent: 'center',
         backgroundColor: '#38ba7d',

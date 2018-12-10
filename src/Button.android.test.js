@@ -1,10 +1,10 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import Button from './Button';
 
 jest.mock('Platform', () => {
     const Platform = require.requireActual('Platform');
-    Platform.OS = 'ios';
+    Platform.OS = 'android';
     return Platform;
 })
 

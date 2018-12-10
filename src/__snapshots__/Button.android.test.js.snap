@@ -30,7 +30,7 @@ ShallowWrapper {
               "fontWeight": "600",
             },
             Object {
-              "fontSize": 16,
+              "fontSize": 20,
             },
           ]
         }
@@ -50,7 +50,7 @@ ShallowWrapper {
           "marginRight": 15,
         },
         Object {
-          "height": 45,
+          "height": 65,
         },
       ],
     },
@@ -68,7 +68,7 @@ ShallowWrapper {
             "fontWeight": "600",
           },
           Object {
-            "fontSize": 16,
+            "fontSize": 20,
           },
         ],
       },
@@ -94,7 +94,7 @@ ShallowWrapper {
                 "fontWeight": "600",
               },
               Object {
-                "fontSize": 16,
+                "fontSize": 20,
               },
             ]
           }
@@ -114,7 +114,7 @@ ShallowWrapper {
             "marginRight": 15,
           },
           Object {
-            "height": 45,
+            "height": 65,
           },
         ],
       },
@@ -132,7 +132,7 @@ ShallowWrapper {
               "fontWeight": "600",
             },
             Object {
-              "fontSize": 16,
+              "fontSize": 20,
             },
           ],
         },
