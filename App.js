@@ -10,6 +10,7 @@ export default class App extends Component {
         <Button 
           label="Primary button" 
           url="https://jestjs.io/"
+          onPress={() => {}}
         />
         <View style={{height: 50}}/>
         <Text style={styles.instructions}>{"This is a secondary button"}</Text>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Rendering should match to snapshot 1`] = `
+exports[`Button Rendering should match to snapshot - Primary: Primary button snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
@@ -23,36 +23,28 @@ ShallowWrapper {
       "activeOpacity": 0.2,
       "children": <Text
         style={
-          Array [
-            Object {
-              "alignSelf": "center",
-              "color": "#fff",
-              "fontWeight": "600",
-            },
-            Object {
-              "fontSize": 16,
-            },
-          ]
+          Object {
+            "alignSelf": "center",
+            "color": "#fff",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
         }
       >
         test label
       </Text>,
       "onPress": [Function],
-      "style": Array [
-        Object {
-          "alignSelf": "stretch",
-          "backgroundColor": "#38ba7d",
-          "borderBottomColor": "#1e6343",
-          "borderBottomWidth": 6,
-          "borderWidth": 1,
-          "justifyContent": "center",
-          "marginLeft": 15,
-          "marginRight": 15,
-        },
-        Object {
-          "height": 45,
-        },
-      ],
+      "style": Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "#38ba7d",
+        "borderBottomColor": "#1e6343",
+        "borderBottomWidth": 6,
+        "borderWidth": 1,
+        "height": 45,
+        "justifyContent": "center",
+        "marginLeft": 15,
+        "marginRight": 15,
+      },
     },
     "ref": null,
     "rendered": Object {
@@ -61,16 +53,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": "test label",
-        "style": Array [
-          Object {
-            "alignSelf": "center",
-            "color": "#fff",
-            "fontWeight": "600",
-          },
-          Object {
-            "fontSize": 16,
-          },
-        ],
+        "style": Object {
+          "alignSelf": "center",
+          "color": "#fff",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
       },
       "ref": null,
       "rendered": "test label",
@@ -87,16 +75,157 @@ ShallowWrapper {
         "activeOpacity": 0.2,
         "children": <Text
           style={
-            Array [
-              Object {
-                "alignSelf": "center",
-                "color": "#fff",
-                "fontWeight": "600",
-              },
-              Object {
-                "fontSize": 16,
-              },
-            ]
+            Object {
+              "alignSelf": "center",
+              "color": "#fff",
+              "fontSize": 16,
+              "fontWeight": "600",
+            }
+          }
+        >
+          test label
+        </Text>,
+        "onPress": [Function],
+        "style": Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#38ba7d",
+          "borderBottomColor": "#1e6343",
+          "borderBottomWidth": 6,
+          "borderWidth": 1,
+          "height": 45,
+          "justifyContent": "center",
+          "marginLeft": 15,
+          "marginRight": 15,
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "test label",
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#fff",
+            "fontSize": 16,
+            "fontWeight": "600",
+          },
+        },
+        "ref": null,
+        "rendered": "test label",
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Button Rendering should match to snapshot - Secondary: Secondary button snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    label="test label"
+    primary={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "activeOpacity": 0.2,
+      "children": <Text
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#fff",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+      >
+        test label
+      </Text>,
+      "onPress": [Function],
+      "style": Array [
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#38ba7d",
+          "borderBottomColor": "#1e6343",
+          "borderBottomWidth": 6,
+          "borderWidth": 1,
+          "height": 45,
+          "justifyContent": "center",
+          "marginLeft": 15,
+          "marginRight": 15,
+        },
+        Object {
+          "backgroundColor": "#f34541",
+          "borderBottomColor": "#a43532",
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "test label",
+        "style": Object {
+          "alignSelf": "center",
+          "color": "#fff",
+          "fontSize": 16,
+          "fontWeight": "600",
+        },
+      },
+      "ref": null,
+      "rendered": "test label",
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "activeOpacity": 0.2,
+        "children": <Text
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#fff",
+              "fontSize": 16,
+              "fontWeight": "600",
+            }
           }
         >
           test label
@@ -109,12 +238,14 @@ ShallowWrapper {
             "borderBottomColor": "#1e6343",
             "borderBottomWidth": 6,
             "borderWidth": 1,
+            "height": 45,
             "justifyContent": "center",
             "marginLeft": 15,
             "marginRight": 15,
           },
           Object {
-            "height": 45,
+            "backgroundColor": "#f34541",
+            "borderBottomColor": "#a43532",
           },
         ],
       },
@@ -125,16 +256,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "test label",
-          "style": Array [
-            Object {
-              "alignSelf": "center",
-              "color": "#fff",
-              "fontWeight": "600",
-            },
-            Object {
-              "fontSize": 16,
-            },
-          ],
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#fff",
+            "fontSize": 16,
+            "fontWeight": "600",
+          },
         },
         "ref": null,
         "rendered": "test label",

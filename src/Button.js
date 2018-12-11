@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, TouchableOpacity, Platform, Linking } from 'react-native';
+import { Text, TouchableOpacity, Linking } from 'react-native';
 
 // 1. Changed to a class based component
 class Button extends Component {
@@ -19,21 +19,13 @@ class Button extends Component {
     render(){
         const { buttonStyle, textStyle } = styles;
         const { label, primary } = this.props;
-        
-        // 3. Custom platform specific rendering
-        const height = Platform.OS === 'ios' ? 45 : 65;
 
-        // 4. Change color of button depending on 'primary' prop
-        const newButtonStyle = primary ? 
-            [buttonStyle, { height }] : 
-            [buttonStyle, {height, backgroundColor: '#f34541', borderBottomColor: '#a43532'}];
-
-        // 5. Platform specific font styling
-        const fontSize = Platform.OS === 'ios' ? 16 : 20;
+        // 3. Change color of button depending on 'primary' prop
+        const newButtonStyle = primary ? buttonStyle : [buttonStyle, { backgroundColor: '#f34541', borderBottomColor: '#a43532' }];
 
         return (
             <TouchableOpacity onPress={this.onPressHandler} style={newButtonStyle}>
-                <Text style={[textStyle, { fontSize }]}>
+                <Text style={textStyle}>
                     {label}
                 </Text>
             </TouchableOpacity>
@@ -49,9 +41,11 @@ const styles = {
     textStyle: {
         alignSelf: 'center',
         color: '#fff',
+        fontSize: 16,
         fontWeight: '600',
     },
     buttonStyle: {
+        height: 45,
         alignSelf: 'stretch',
         justifyContent: 'center',
         backgroundColor: '#38ba7d',
