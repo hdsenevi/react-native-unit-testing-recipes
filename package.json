@@ -20,6 +20,7 @@
     "react-test-renderer": "16.6.1"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "timers": "fake"
   }
 }
