@@ -1,23 +1,23 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Button from './src/Button'
+import Button from './shapshot_01/Button'
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.instructions}>{"This is a primary button"}</Text>
-        <Button 
-          label="Primary button" 
+        <Button
+          label="Primary button"
           url="https://jestjs.io/"
-          onPress={() => {}}
+          onPress={() => { }}
         />
-        <View style={{height: 50}}/>
+        <View style={{ height: 50 }} />
         <Text style={styles.instructions}>{"This is a secondary button"}</Text>
-        <Button 
-          label="Secondary button" 
-          primary={false} 
-          onPress={() => {}}
+        <Button
+          label="Secondary button"
+          primary={false}
+          onPress={() => { }}
           url="https://airbnb.io/enzyme/"
         />
       </View>
